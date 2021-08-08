@@ -107,7 +107,7 @@
 <h1 id="build">build</h1>
 <p><code>trunk build</code> runs a cargo build targeting the wasm32 instruction set, runs <code>wasm-bindgen</code> on the built WASM, and spawns asset build pipelines for any assets defined in the target <code>index.html</code>.</p>
 <p>Trunk leverages Rust's powerful concurrency primitives for maximum build speeds &amp; throughput.</p>
-<p>It can also run without wasm32 cargo project, simply processing SASS, images, etc (see <code>no_implicit_rust</code> configuration option).</p>
+<p>It can also run without wasm32 cargo project, simply processing SASS, images, etc (see <code>implicit_rust</code> configuration option).</p>
 <h1 id="watch">watch</h1>
 <p><code>trunk watch</code> does the same thing as <code>trunk build</code>, but also watches the filesystem for changes, triggering new builds as changes are detected.</p>
 <h1 id="serve">serve</h1>
